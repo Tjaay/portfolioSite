@@ -42,10 +42,7 @@ get_header();?>
               <p class="text-left"> I am a web developer located in the Comox Valley. I moved to the valley 5 years ago and have loved it ever
                 since. This site is a means for me to display my quirky musing and designs to the world.
               </p>
-              <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark"
-                data-vanity="thomas-reeves-9895b2161">
-                <a class="LI-simple-link" href='https://ca.linkedin.com/in/thomas-reeves-9895b2161?trk=profile-badge'>Thomas Reeves</a>
-              </div>
+             <img src="<?php the_field("profilePic") ?>" alt="profile picture" height="250" width="250">
             </div>
 
             </div>
@@ -71,7 +68,7 @@ get_header();?>
                       <i class="fa fa-html5"></i>
                     </p>
                     <h2>Html 5</h2>
-                    <p>HTML is a markup language used to present content on the Web</p>
+                    <p><?php the_field("html_5");?></p>
                     <br>
                     <a class="btn btn-pricing" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
                       Learn More</a>
@@ -84,7 +81,7 @@ get_header();?>
                       <i class="fa fa-css3"></i>
                     </p>
                     <h2>CSS</h2>
-                    <p>Cascading stylesheets are used to change the style of web pages</p>
+                    <p><?php the_field("css_text");?></p>
                     <br>
                     <a class="btn btn-pricing" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
                       Learn More</a>
@@ -97,7 +94,7 @@ get_header();?>
                       <i class="fa fa-laptop"></i>
                     </p>
                     <h2 class="gold-text">SASS</h2>
-                    <p>Sass is a CSS library to write CSS more efficently</p>
+                    <p><?php the_field("sass_text");?></p>
                     <br>
                     <a class="btn btn-pricing" href="https://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank">
                       Learn More</a>
@@ -112,7 +109,7 @@ get_header();?>
                       <i class="fa fa-database"></i>
                     </p>
                     <h2>PHP</h2>
-                    <p>Is a web based scripting language used for database's and wordpress related sites</p>
+                    <p><?php the_field("php_text");?></p>
                     <br>
                     <a class="btn btn-pricing" href="http://php.net/docs.php" target="_blank">Learn More</a>
                   </div>
@@ -124,7 +121,7 @@ get_header();?>
                       <i class="fa fa-desktop"></i>
                     </p>
                     <h2>Javascript</h2>
-                    <p>A scripting language to perform dynamic actions on a website</p>
+                    <p><?php the_field("javascript_card_text");?></p>
                     <br>
                     <a class="btn btn-pricing" href="https://developer.mozilla.org/bm/docs/Web/JavaScript" target="_blank">
                       Learn More</a>
@@ -137,8 +134,7 @@ get_header();?>
                       <i class="fa fa-wordpress"></i>
                     </p>
                     <h2 class="gold-text">Wordpress</h2>
-                    <p>Wordpress is a content management system widely used to form a basis for many sites. Now powering over
-                      25% of the sites on the web.
+                    <p><?php the_field("wordpress_text");?>
                     </p>
                     <br>
                     <a class="btn btn-pricing" href="https://codex.wordpress.org/" target="_blank">Learn More</a>

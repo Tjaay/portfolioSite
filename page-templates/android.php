@@ -23,16 +23,15 @@ get_header();?>
         <a href="/ios">iOS</a>
       </li>
       <li>
-        <a href="/android">Andriod</a>
+        <a href="/android">Android</a>
       </li>
     </ul>
   </nav>
 
   <div class="main-content">
     <div class="code-info-text">
-      <h2 style="text-align:center;">Web Development</h2>
-      <p class="text-center">Listed below are the multiple web works I have taken a part of. Under each you will find info about why I did the project
-        and their related resources</p>
+      <h2 style="text-align:center;"><?php the_field("page_header")?></h2>
+      <p class="text-center"><?php the_field("header_text")?></p>
     </div>
 
     <div class="main-container">

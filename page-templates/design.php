@@ -5,9 +5,9 @@ Template Name: Design
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
-<div class= "design-info-text">
-  <h2 style="text-align:center;">Design</h2>
-  <p class="text-center">I also have some experiance in typography and design. Below you will find a gallery of some of my works.</p>
+<div class="code-info-text">
+  <h2 style="text-align:center;"><?php the_field("page_header")?></h2>
+  <p class="text-center"><?php the_field("header_text")?></p>
 </div>
 <div class="design-container">
 <div class="main-container">
