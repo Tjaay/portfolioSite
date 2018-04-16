@@ -1,0 +1,85 @@
+
+$social-bar-transformation: 9.5rem;
+$social-bar-width: 11.6rem;
+
+$social-icon-transition: all .50s ease-in-out;
+$social-icon-font-size: 1.1rem;
+$social-icon-padding: 0.5rem;
+
+
+.sticky-social-bar {
+  padding: 0;
+  margin: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: $social-bar-width;
+  position: fixed;
+  right: $social-bar-transformation * -1;
+
+  .social-icon {
+    list-style-type: none;
+    color: $social-icon-color;
+    background-color: inherit;
+    margin: 0;
+    transition: $social-icon-transition;
+    cursor: pointer;
+    font-size: $social-icon-font-size;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    
+    > a {
+      color: inherit;
+      background-color: inherit;
+
+      > .fa {
+        padding: $social-icon-padding;
+        width: 2rem;
+        height: 2rem;
+
+          margin-right: 0.5rem;
+        
+
+        &.fa-facebook {
+          background-color: $social-facebook;
+        }
+        &.fa-twitter {
+          background-color: $social-twitter;
+        }
+        &.fa-linkedin {
+          background-color: $social-linkedin;
+        }
+      }
+
+      > .social-icon-text {
+        font-size: 80%;
+        color: $social-icon-color;
+        text-transform: uppercase;
+
+     
+          margin-left: 0.5rem;
+        
+      }
+    }
+
+    &:hover {
+        transform:translateX($social-bar-transformation * -.70);
+      > a {
+        color: inherit;
+        background-color: inherit;
+      }
+    }
+  }
+}
+
+.twitter:hover{
+    background-color: $social-twitter;
+}
+
+.facebook:hover{
+    background-color: $social-facebook;
+}
+
+.linkedin:hover{
+    background-color: $social-linkedin;
+}
+

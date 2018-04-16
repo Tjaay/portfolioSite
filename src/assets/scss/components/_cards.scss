@@ -1,0 +1,88 @@
+
+$card-product-hover-font-size: 1.5rem;
+$card-product-hover-title-font-size: 1.4rem;
+
+.about-code, .demo-code, .git-code {
+  display:none;
+}
+
+.card-hover-title {
+  font-size: $card-product-hover-title-font-size;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.card-hover {
+  position: relative;
+  line-height: 1.2rem;
+  transition: all 0.35s ease;
+  margin-right:1rem;
+  img{
+    height:17rem;
+  }
+}
+
+.card-hover-details {
+  @include card-section;
+}
+
+
+.card-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-hover-icons a i{
+  display: block;
+  font-size: 1.5rem;
+  line-height: rem-calc(40);
+  width: rem-calc(50);
+  background-color: $white;
+  text-align: center;
+  color: $black;
+}
+
+.card-hover-icons a i:hover{
+  background-color: $dark-nav-color;
+  color: $white;
+  width:40%;
+  cursor: pointer; 
+  .about-code, .git-code, .demo-code {
+    display:inline;
+  }    
+}
+
+.card-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.35s ease;
+}
+
+.card-hover:hover a,
+.card-hover.hover a {
+  transition: all 0.35s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-hover:hover a:nth-child(2),
+.card-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-hover:hover a:nth-child(3),
+.card-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+
+
+

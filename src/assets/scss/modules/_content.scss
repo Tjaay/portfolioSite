@@ -1,0 +1,230 @@
+
+@media only screen and (min-width : 768px) {
+  .frontpage-header {
+    display:none;
+  }
+}
+
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  background-color: #f5f6fa;
+}
+
+.off-canvas-content{
+  background-color: #f5f6fa;
+}
+
+.page-template-design .entry-title {
+  display:none;
+}
+
+.info-text {
+  background-color: $gun-metal-color;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+  color: $white;
+}
+
+.code-info-text {
+  background-color: $gun-metal-color;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+  color: $white;
+}
+
+.communication-info-text {
+  background-color: $flat_green_color;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+  color: $white;
+}
+
+
+.main-container {
+  @include xy-grid-container;
+}
+
+.main-grid {
+  @include xy-grid();
+  margin-top: 1rem;
+
+  @include breakpoint(medium) {
+    margin-top: 3rem;
+  }
+
+  &.sidebar-left {
+    // Place the sidebar below main content on small screens ...
+    @include breakpoint(small) {
+      .main-content { order: 1; }
+      .sidebar { order: 2; }
+    }
+
+    // ... and to the left on medium-up screens, when using the sidebar-left template
+    @include breakpoint(medium) {
+      .main-content { order: 2; }
+      .sidebar { order: 1; }
+    }
+  }
+
+  // Full width template
+  .main-content-full-width {
+    @include xy-cell(12);
+  }
+
+  // Default template
+  .main-content {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(8);
+    }
+  }
+
+  .sidebar {
+    @include breakpoint(small) {
+      @include xy-cell(12);
+    }
+
+    @include breakpoint(medium) {
+      @include xy-cell(4);
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+
+
+$marketing-site-hero-height: 90vh;
+
+
+.marketing-site-hero {
+  height: $marketing-site-hero-height;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+}
+
+
+
+.marketing-site-hero-content {
+  max-width: rem-calc(1000);
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-left: 50%;
+  }
+}
+
+.marketing-content {
+  background-color: $gun-metal-color;
+  text-align:center;
+  width:500px;
+  height:400px;
+  margin: 0 auto;
+  color: $white;
+}
+
+.marketing-contact {
+  background-color: $gun-metal-color;
+  text-align:center;
+  width:500px;
+  height:400px;
+  margin: 0 auto;
+  color: $white;
+}
+
+.marketing-snippet {
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.hero-full-screen {
+
+  height: 93vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+ 
+
+
+  .middle-content-section {
+    text-align: center;
+    color: $white;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    h1{
+      padding:1rem;
+      padding-right:2rem;
+      padding-left:2rem;
+      background-color:$rusty-red-color;
+    }
+    h5 {
+      margin-top:-1rem;
+      padding:.5rem;
+      background-color:$gun-metal-color;
+    }
+   
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    svg {
+      display:block;
+      margin:auto;
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: $warm-yellow-color;
+      opacity: 0.8;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+    svg:hover {
+      fill: darken($warm-yellow-color,10%);
+    }
+  }
+}
+

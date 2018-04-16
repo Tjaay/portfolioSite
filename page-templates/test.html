@@ -1,0 +1,168 @@
+<div class="hero-full-screen parallax " style="background-image: url(<?php the_field('header_image');?>);">
+    <div class="middle-content-section">
+        <h1>
+            <?php bloginfo('name');?>
+        </h1>
+        <h5></h5>
+    </div>
+    <div class="bottom-content-section" data-magellan data-threshold="0">
+        <a href="#main-content-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"
+                />
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+<div id="main-content-section" data-magellan-target="main-content-section">
+    <div class=info-text "parallax">
+        <h2 style="text-align:center;">Tools used to create this site</h2>
+    </div>
+
+
+    <div class="main-container parallax">
+        <div class="main-grid">
+            <main class="main-content-full-width">
+                <div class="tools grid-x grid-padding-x small-up-2 medium-up-3">
+
+                    <div class="column medium-4 text-center">
+                        <div class="plan html">
+                            <p class="icon">
+                                <i class="fa fa-tablet fa-fw"></i>
+                            </p>
+                            <h2 class="bronze-text">Html 5</h2>
+                            <p>Basic Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="container column medium-4 text-center">
+                        <div class="plan css">
+                            <p class="icon">
+                                <i class="fa fa-laptop fa-fw"></i>
+                            </p>
+                            <h2>CSS</h2>
+                            <p>Great Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="container column medium-4 text-center">
+                        <div class="plan sass">
+                            <p class="icon">
+                                <i class="fa fa-desktop fa-fw"></i>
+                            </p>
+                            <h2 class="gold-text">SASS</h2>
+                            <p>Premium Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="container column medium-4 text-center">
+                        <div class="plan php">
+                            <p class="icon">
+                                <i class="fa fa-tablet fa-fw"></i>
+                            </p>
+                            <h2 class="bronze-text">PHP</h2>
+                            <p>Basic Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="container column medium-4 text-center">
+                        <div class="plan javascript">
+                            <p class="icon">
+                                <i class="fa fa-laptop fa-fw"></i>
+                            </p>
+                            <h2>Javascript</h2>
+                            <p>Great Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="container column medium-4 text-center">
+                        <div class="plan wordpress">
+                            <p class="icon">
+                                <i class="fa fa-desktop fa-fw"></i>
+                            </p>
+                            <h2 class="gold-text">Wordpress</h2>
+                            <p>Premium Support</p>
+                            <br>
+                            <a class="btn btn-pricing" href="#" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+
+    <div class="parallax info-text">
+        <h2 style="text-align:center;">About Me</h2>
+    </div>
+    <div class="full-width-testimonial parallax" style="background-image: url(<?php the_field('about_image');?>);">
+        <div class="full-width-testimonial-section">
+            <div class="full-width-testimonial-icon text-center">
+                <div class="full-width-testimonial-content">
+                    <h5 class="full-width-testimonial-text">Web Developer based in the Comox Valley. Moved to the region back in 2014 and have loved it since
+                    </h5>
+                    <p class="full-width-testimonial-source">Thomas Reeves</p>
+                    <span class="full-width-testimonial-source-context">Born and raised in Texas</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" name="contact" class="parallax info-text">
+            <h2 style="text-align:center;">Contact Me</h2>
+        </div>
+
+        <div class=" large-12 columns">
+            <div class="marketing-site-hero parallax " style="background-image: url(<?php the_field('marketing_image');?>);">
+                <div class="marketing-site-hero-content">
+                    <div class="button-hover-reveal-wrapper">
+                        <label>Learn More</label>
+                        <a href="#" class="button-hover-reveal">Resume</a>
+                        <button class="button-hover-reveal" data-open="exampleModal1">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal" id="exampleModal1" data-reveal>
+            <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
+                <h3>Contact</h3>
+                <form action="">
+                    <div class="row">
+                        <label>Full name *
+                            <input type="text" placeholder="Full name">
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Email *
+                            <input type="email" placeholder="Email address">
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label>Message *
+                            <textarea placeholder="Describe your needs" rows="3"></textarea>
+                        </label>
+                    </div>
+                    <div class="contact-panel-actions">
+                        <input type="submit" class="button submit-button" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>

@@ -1,0 +1,179 @@
+.tools-grid {
+  background-image: url();
+  width:100%;
+  margin-bottom:80px;
+}
+  
+.tools .type {
+    margin-top:30px;
+    background-color: $white;
+    padding:40px;
+    border-radius:7px;
+    color:$white;
+    width:100%;
+    box-shadow:5px 5px 0 rgba(0,0,0,0.05);
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.tools .type h2 {
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:0;
+    text-transform:uppercase;
+}
+
+.tools .type.featured h2 {
+    margin-bottom:10px;
+}
+
+.tools .type p {
+  margin-top:20px;
+    margin-bottom:5px;
+    font-weight:400;
+}
+
+.tools .type .icon {
+    display:inline-block;
+    margin-bottom:30px;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    font-size:48px;
+    line-height:120px;
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.tools .type .btn-pricing {
+    margin-top:20px;
+    margin-bottom:0;
+    font-size:16px;
+    padding:10px 20px;
+    color:$white;
+}
+
+
+// changes colors of cards headings
+.html h2{
+  color:$flat-blue-color;
+}
+.css h2{
+  color:$flat-orange-color;
+}
+.sass h2{
+  color:$flat-purple-color;
+}
+.php h2{
+  color:$flat-green-color;
+}
+.javascript h2{
+  color:$flat-red-color;
+}
+.wordpress h2{
+  color:$gun-metal-color;
+}
+
+
+
+
+// handles buttons apperance and hover options
+.tools .type:hover .btn-pricing{
+    background-color: #00BFA5;
+    color:$white;
+}
+
+.tools .type.html .btn-pricing:hover {
+  background-color: lighten($flat-blue-color,22%);
+}
+
+.tools .type.css .btn-pricing:hover {
+background-color: lighten($flat-orange-color,32%);
+}
+
+.tools .type.sass .btn-pricing:hover {
+background-color: lighten($flat-purple-color,22%);
+}
+
+.tools .type.php .btn-pricing:hover {
+background-color: lighten($flat-green-color,8%);
+}
+
+.tools .type.javascript .btn-pricing:hover {
+background-color: lighten($flat-red-color,15%);
+}
+
+.tools .type.wordpress .btn-pricing:hover {
+background-color: lighten($gun-metal-color,22%);
+}
+
+// colors for icons when hovered
+.tools .type.html:hover .icon{
+  color:$flat-blue-color;
+  background:$white;
+}
+
+.tools .type.css:hover .icon{
+  color:$flat-orange-color;
+  background:$white;;
+}
+
+.tools .type.sass:hover .icon{
+  color:$flat-purple-color;
+  background:$white;;
+}
+
+.tools .type.javascript:hover .icon{
+  color:$flat-red-color;
+  background:$white;;
+}
+
+.tools .type.php:hover .icon{
+  color:$flat-green-color;
+  background:$white;;
+}
+
+.tools .type.wordpress:hover .icon{
+  color:$gun-metal-color;
+  background:$white;;
+}
+
+.tools .type.html .icon,
+.tools .type.html:hover {
+  background:$flat-blue-color;
+  color:$white;;
+}
+
+
+.tools .type.css .icon,
+.tools .type.css:hover {
+  background:$flat-orange-color;
+  color:$white;;
+}
+
+
+.tools .type.sass .icon,
+.tools .type.sass:hover {
+  background:$flat-purple-color;
+  color:$white;
+}
+
+
+.tools .type.javascript .icon,
+.tools .type.javascript:hover {
+  background:$flat-red-color;
+  color:$white;;
+}
+
+
+.tools .type.php .icon,
+.tools .type.php:hover {
+  background:$flat-green-color;
+  color:$white;;
+}
+
+.tools .type.wordpress .icon,
+.tools .type.wordpress:hover {
+  background:$gun-metal-color;
+  color:$white;;
+}
