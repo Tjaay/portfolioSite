@@ -42,8 +42,8 @@ $social-icon-padding: 0.5rem;
         &.fa-facebook {
           background-color: $social-facebook;
         }
-        &.fa-twitter {
-          background-color: $social-twitter;
+        &.fa-github {
+          background-color: $social-github;
         }
         &.fa-linkedin {
           background-color: $social-linkedin;
@@ -71,8 +71,8 @@ $social-icon-padding: 0.5rem;
   }
 }
 
-.twitter:hover{
-    background-color: $social-twitter;
+.github:hover{
+    background-color: $social-github;
 }
 
 .facebook:hover{

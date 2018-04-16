@@ -29,14 +29,14 @@
       <span class="social-icon-text">Facebook</span>
     </a>
   </li>
-  <li class="social-icon twitter">
-    <a href="#">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-      <span class="social-icon-text">Twitter</span>
+  <li class="social-icon github">
+    <a href="https://github.com/Tjaay">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <span class="social-icon-text">Github</span>
     </a>
   </li>
   <li class="social-icon linkedin">
-    <a href="#">
+    <a href="https://www.linkedin.com/in/thomas-reeves-9895b2161/">
       <i class="fa fa-linkedin" aria-hidden="true"></i>
       <span class="social-icon-text">Linkedin</span>
     </a>

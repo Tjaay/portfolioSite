@@ -20,6 +20,9 @@ $card-product-hover-title-font-size: 1.4rem;
   img{
     height:17rem;
   }
+  &:hover {
+    opacity:.8;
+  }
 }
 
 .card-hover-details {
@@ -50,7 +53,7 @@ $card-product-hover-title-font-size: 1.4rem;
 }
 
 .card-hover-icons a i:hover{
-  background-color: $dark-nav-color;
+  background-color: $gun-metal-color;
   color: $white;
   width:40%;
   cursor: pointer; 
@@ -69,7 +72,7 @@ $card-product-hover-title-font-size: 1.4rem;
 .card-hover:hover a,
 .card-hover.hover a {
   transition: all 0.35s ease;
-  opacity: 1;
+  opacity: 2;
   transform: translateX(0);
 }
 

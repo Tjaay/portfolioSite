@@ -169,7 +169,7 @@ get_header();?>
                   <div class="button-hover-reveal-wrapper">
                     <label>Learn More</label>
                     <a href="#" class="button-hover-reveal">Resume</a>
-                    <button class="button-hover-reveal" data-open="exampleModal1">Contact</button>
+                    <a href="/contact" class="button-hover-reveal">Contact</a>
                   </div>
             </div>
           </div>
@@ -178,38 +178,6 @@ get_header();?>
       </div>
     </div>
 
-    <div class="reveal" id="exampleModal1" data-reveal>
-      <br>
-      <div class="contact-panel" id="contact-panel" data-toggler=".is-active">
-        <br>
-        <h3>Contact</h3>
-        <form action="">
-          <div class="row">
-            <label>Full name *
-              <input type="text" placeholder="Full name">
-            </label>
-          </div>
-          <div class="row">
-            <label>Email *
-              <input type="email" placeholder="Email address">
-            </label>
-          </div>
-          <div class="row">
-            <label>Message *
-              <textarea placeholder="Describe your needs" rows="3"></textarea>
-            </label>
-          </div>
-          <div class="contact-panel-actions">
-            <input type="submit" class="button submit-button" value="Submit">
-          </div>
-        </form>
-      </div>
 
-
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
   <!-- End of main content -->
   <?php get_footer();

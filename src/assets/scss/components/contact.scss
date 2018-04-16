@@ -19,7 +19,7 @@
   
         &:hover {
           transition: background-color 0.5s ease;
-          background-color: $gun-metal-color;
+          background-color: $rusty-red-color;
         }
       }
   
@@ -75,8 +75,15 @@
   }
 }
 
+.wpcf7 {
+  width:50%;
+}
 
-  
+@media only screen and (max-width : 768px) {
+  .wpcf7 {
+    width:100%;
+  }
+}
 
   
 

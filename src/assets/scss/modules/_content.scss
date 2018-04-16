@@ -14,6 +14,15 @@
   background-size: cover;
 }
 
+.design-info-text{
+  background-color: $gun-metal-color;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+  color: $white;
+  margin-bottom:6rem
+}
+
 .main-content {
   background-color: #f5f6fa;
 }
@@ -122,8 +131,6 @@ $marketing-site-hero-height: 90vh;
   }
 }
 
-
-
 .marketing-site-hero-content {
   max-width: rem-calc(1000);
   margin: 0 auto;
@@ -180,8 +187,6 @@ $marketing-site-hero-height: 90vh;
   justify-content: space-between;
   background-size: cover;
  
-
-
   .middle-content-section {
     text-align: center;
     color: $white;

@@ -18,6 +18,7 @@
   position:fixed;
   width:100%;
   z-index:9999;
+  opacity: .9;
 }
 
 
@@ -51,7 +52,7 @@
 }
 
 span.site-mobile-title a {
-  background-color: $gun-metal-color;
+  background-color: $rusty-red-color;
   margin-left:.5rem;
   opacity: 0.9;
   filter: alpha(opacity=50); /* For IE8 and earlier */
@@ -78,10 +79,9 @@ span.site-mobile-title a {
   .top-bar-title a {
     font-size: 1rem;
     color: $white;
-    background-color: $gun-metal-color;
+    background-color: $rusty-red-color;
     margin-left:.5rem;
-    opacity: 0.9;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+   
     padding:.6rem;
     &:hover {
       border-bottom: 0.175rem solid $warm-yellow-color;
@@ -97,7 +97,7 @@ span.site-mobile-title a {
     font-size: 0.8rem;
     line-height: 1;
     &:hover:not(.button) {
-      background-color: lighten($gun-metal-color,5%);
+      background-color: lighten($gun-metal-color,6%);
     }
   }
 
@@ -130,7 +130,6 @@ span.site-mobile-title a {
 .nav-next {
   float:right;
 }
-
 
 .hover-underline-menu {
   width: 100%;
@@ -167,9 +166,7 @@ span.site-mobile-title a {
   }
 }
 
-.menu-icon {
-  padding: .75rem;
-}
+
 
 .button-top {
   position: fixed;
